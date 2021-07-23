@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project5 | Asper</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        margin: 0;
+        border: 0;
+        padding: 0;
+    }
+
+    .service{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .service .card{
+        padding: 15px;
+        margin: 15px;
+        min-width: 350px;
+        background-color: rgb(107, 209, 209);
+    }
+    footer{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: x-large;
+        background-color: bisque;
+    }
+    footer ul{
+        padding-top: 5px;
+    }
+    footer ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 15px;
+    }
+    footer a{
+        color: black;
+    }
+    @media screen and (max-width : 600px) {
+        .service{
+            flex-direction: column;
+        }
+    }
+  
+</style>
+<body>
+    <div class="container-fluid">
+        <!-- Content here -->
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand " href="#"><b style="font-size: xx-large; color: coral;">India-Travel</b></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="d-none">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown link
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <!-- carousel -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="carousel1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>The Golden Temple</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="carousel2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Incredible Rajasthan</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="carousel3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Divine Himalayas</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </div>
+      <section class="main_heading my-5">
+        <div class="text-center">
+          <h1 class="display-4 text-capitalize">about us</h1>
+          <hr class="w-25 mx-auto" />
+        </div>
+        <div class="container my-5">
+          <div class="row">
+            <div class="col-lg-6 clo-md-6 col-12">
+              <figure>
+                <img src="logo.jpg" alt="about" class="img-fluid about_img">
+              </figure>
+    
+            </div>
+            <div class="col-lg-6 clo-md-6 col-12 d-flex justify-content-center align-items-start flex-column">
+              <h1>India-Travel</h1>
+              <p>Tourism in India is important for the country's economy and is growing rapidly. The World Travel and Tourism Council calculated that tourism generated ₹16.91 lakh crore or 9.2% of India's GDP in 2018 and supported 42.673 million jobs, 8.1% of its total employment
+    
+              </p>
+    
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="right"
+                title="learn more">
+                info
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Our-services -->
+      <section class="main_heading my-5" id="serv">
+        <div class="text-center">
+          <h1 class="display-4 text-capitalize">Our-services</h1>
+          <hr class="w-25 mx-auto" />
+        </section>
+        </div>
+            <div class="service">
+            <div class="card " style="width: 18rem;">
+                <img src="central.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">The Madhya-Pradesh Safari</h5>
+                  <p class="card-text">Madhya Pradesh, a large state in central India, retains landmarks from eras throughout Indian history. Begun in the 10th century, its Hindu and Jain temples at Khajuraho are renowned for their carvings of erotic scenes, most prominently Kandariya Mahadeva, a temple with more than 800 sculptures. The eastern Bandhavgarh and Kanha national parks, noted Bengal tiger sanctuaries, offer guided safaris. </p>
+                  <a href="#" class="btn btn-primary">Book Now!</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="north.jpg" class="card-img-top" alt="...">
+                <br>
+                <div class="card-body">
+                  <h5 class="card-title">North-Indian Escape</h5>
+                  <p class="card-text">For natural wonders and trekking trails, the states of Himachal Pradesh, Uttrakhand and Jammu & Kashmir are famous. The hill towns of Shimla, Nainital, Dharamshala and Dalhousie see major influx of tourists.North India has some very safe places and some areas where you need to take extra care. Friendly locals will ensure you only visit safe places and will make you feel much more at ease about travelling in India.The ladakh road trip with snow covered mountains will definitely be one of your best expereince .</p> <br> <br>
+                  <a href="#" class="btn btn-primary">Book Now!</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="South.jfif" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">The Evergreen south</h5>
+                  <p class="card-text">South India is a region consisting of the southern part of India, which encompasses the Indian states of Andhra Pradesh, Karnataka, Kerala, Tamil Nadu, and Telangana, as well as the union territories of Lakshadweep and Puducherry, comprising 19.31% of India's area and 20% of India's population. Scenes like feilds of Munnar and ancient temples and culture of the south will be a divine and mesmerising expereince.</p>
+                  <a href="#" class="btn btn-primary">Book Now!</a>
+                </div>
+              </div>
+            </div>
+            <!-- Gallery -->
+            <section class="main_heading my-5">
+                <div class="text-center">
+                  <h1 class="display-4 text-capitalize">Gallery</h1>
+                  <hr class="w-25 mx-auto" />
+                </div>
+                <div class="container gallery">
+                    <div class="row gy-2 my-5">
+                      
+                      <div class="col-md-4 col-10 mx-auto">
+                        <figure>
+                          <img src="Gallery/1.jfif" alt="gallery" class="img-fluid">
+                        </figure>
+                      </div>
+                      <div class="col-md-4 col-10 mx-auto">
+                        <figure>
+                          <img src="Gallery/2.jpg" alt="gallery" class="img-fluid">
+                        </figure>
+                      </div>
+                      <div class="col-md-4 col-10 mx-auto">
+                        <figure>
+                          <img src="Gallery/3.jfif" alt="gallery" class="img-fluid">
+                        </figure>
+                      </div>
+                      <div class="col-md-4 col-10 mx-auto">
+                        <figure>
+                          <img src="Gallery/4.jpg" alt="gallery" class="img-fluid">
+                        </figure>
+                      </div>
+                      <div class="col-md-4 col-10 mx-auto">
+                        <figure>
+                          <img src="Gallery/5.jpg" alt="gallery" class="img-fluid">
+                        </figure>
+                      </div>
+                      <div class="col-md-4 col-10 mx-auto">
+                        <figure>
+                          <img src="Gallery/6.jpg" alt="gallery" class="img-fluid">
+                        </figure>
+                      </div>
+                      <div class="col-md-4 col-10 mx-auto">
+                        <figure>
+                          <img src="Gallery/7.jfif" alt="gallery" class="img-fluid">
+                        </figure>
+                      </div>
+                      <div class="col-md-4 col-10 mx-auto">
+                        <figure>
+                          <img src="Gallery/8.webp" alt="gallery" class="img-fluid">
+                        </figure>
+                      </div>
+                      <div class="col-md-4 col-10 mx-auto">
+                        <figure>
+                          <img src="Gallery/9.jpg" alt="gallery" class="img-fluid">
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                  </section>
+                  <!-- Contact-us -->
+                
+                  <section class="main_heading my-5">
+                    <div class="text-center">
+                      <h1 class="display-4 text-capitalize">contact us</h1>
+                      <hr class="w-25 mx-auto" />
+                    </div>
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-8 col-md-6 mx-auto">
+                            <form>
+                              <div class="mb-3 t-3">
+                                <label for="exampleInputPassword1" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1">
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                              </div>
+                              
+              
+                              <div class="mb-3">
+                                <label>Subscribe to get regular updates:-</label>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                  <label class="form-check-label" for="inlineRadio2">No</label>
+                                </div>
+                                
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div>
+                              <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <footer>
+                      <div>  &#169; India-Travel</div>
+                      <div>
+                          <ul>
+                              <li><a href="#"><i class="fab fa-instagram"></a></i></li>
+                              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                              <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                          </ul>
+                      </div>
+                    </footer>
+
+</body>
+</html>
